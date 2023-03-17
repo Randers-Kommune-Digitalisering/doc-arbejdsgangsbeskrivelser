@@ -27,8 +27,9 @@ Automatiseringsløsningen er opbygget som løst koblet arkitektur hvor data styr
 
 - Først tilgår to digitale assistenter Borgerservice systemet *Worklet* og *Kommunernes Pensionssystem* og forsøger at lave en rå kopi af tekst-elementer i brugerfladen. 
 - Derefter sendes de rå tekstdata igennem et datafilter, der forsøger at normalisere og vaske de rå data. 
-- Kommer data brugbart ud af filteret, bliver det sendt til en regelmotor konfigureret med forretningsregler besluttet af forvaltningen. 
--Til sidst bliver der beregnet et tilskudsbeløb baseret på . Forslagene udstilles som beslutnings støtte til en sagsbehandler på en webflade.
+- Kommer data brugbart ud af filteret, bliver det sendt til en regelmotor konfigureret med forretningsregler besluttet af forvaltningen.
+- I regelmotoren beregnes tilskudsbeløbet baseret på en kombination af interne systemregler og de konfigurerbare forretningsregler.
+- Forslagene udstilles til sidst som beslutnings støtte til en sagsbehandler på en webflade.
 
 ### Afhængigheder
 Løsningen er afhængig af en række :gear: software komponenter og en række :cloud: netværksadgange til eksterne ressourcer for at fungere.
