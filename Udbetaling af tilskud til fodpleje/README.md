@@ -12,7 +12,7 @@ subgraph Kommunernes Pensionssystem
 KPDB & KPWEB
 end
 
-subgraph Lokal Windows Maskine
+subgraph Lokal Kontor-PC
 E1 & E2 & T & F & UI
 end
 
