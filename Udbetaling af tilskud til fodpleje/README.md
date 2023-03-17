@@ -26,7 +26,7 @@ F[\Datafilter/]-->T{regelmotor} -->|JSON| UI>Webflade]
 Automatiseringsløsningen er opbygget som løst koblet arkitektur hvor data styres igennem en række komponenter der er simple at vedligeholde og udskifte. 
 
 - Først tilgår to digitale assistenter Borgerservice systemet *Worklet* og *Kommunernes Pensionssystem* og forsøger at lave en rå kopi af tekst-elementer i brugerfladen. 
-- Derefter sendes rå tekstdata sendes igennem et datafilter, der forsøger at normalisere og vaske de rå data. 
+- Derefter sendes rå tekstdata igennem et datafilter, der forsøger at normalisere og vaske de rå data. 
 - Kommer data brugbart ud af filteret, bliver det sendt til en regelmotor konfigureret med forretningsregler besluttet af forvaltningen. 
 -Til sidst bliver der beregnet et tilskudsbeløb baseret på . Forslagene udstilles som beslutnings støtte til en sagsbehandler på en webflade.
 
