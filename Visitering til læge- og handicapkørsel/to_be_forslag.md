@@ -1,6 +1,8 @@
 # TO BE FORSLAG
 ## Find borgere uden tidligere bevillinger
 
+```mermaid
+
 flowchart TD
 
 subgraph Hent nye ansøgninger
@@ -27,3 +29,4 @@ D -->|Afslag eller igen breve sendt| S
 D --x|Bevilling sendt|H
 
 H(stop)
+```
