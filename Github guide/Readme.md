@@ -12,6 +12,13 @@ Alle henvendelser vedrørende Digitaliseringsteamet ydelser skal oprettes i Digi
 7. Hvis der er en opstarts- og afslutningsdato for projektet indtastes dette i felterne 'opstart' og 'afslutning'. 
 8. Indtast navnet på bestilleren/rekvirenten af henvendelsen. 
 
+Efter at henvendelsen er oprettet skal selve opgaven laves om til et issue. Dette gøres ved: 
+1. Tryk på navnet på opgaven du lige har oprettet. 
+2. Nederst i højre hjørne trykker du på 'convert to issue'.
+3. I rullemenuen der kommer frem vælger du 'doc-arbejdsgangsbeskrivelser'.  
+
+Herefter kan du oprette en taskliste ved at trykke på ikonet, som illustrere en opgaveliste med et flueben. Der hvor der står "Add a draft title or issue reference here", kan du erstatte teskten med en opgave - eksempelvis 'kortlægning af arbejdsgang'. HVis du ønsker at tilføje flere opgaver trykker du blot på 'enter' på tastaturet. De af opgaverne på denne liste, som ender ud i leverancer, skal markeres som 'issues' og tilføjes en person, som er ansvarlig for det pågældende issue.
+
 ## Oprettelse af mappe til arbejdsgangsbeskrivelser 
 Ved henvendelser der drejer sig om procesautomatiseringer, skal der oprettes en mappe til dokumentation af arbejdsgangsbeskrivelser (procestegninger). 
 Alle arbejdsgangsbeskrivelser skal dokumenteres i det repository, som hedder 'doc-arbejdsgangsbeskrivelser'. 
