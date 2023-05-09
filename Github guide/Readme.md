@@ -13,4 +13,10 @@ Alle henvendelser vedrørende Digitaliseringsteamet ydelser skal oprettes i Digi
 8. Indtast navnet på bestilleren/rekvirenten af henvendelsen. 
 
 ## Oprettelse af mappe til arbejdsgangsbeskrivelser 
-Ved henvendelser der drejer sig om procesautomatiseringer, skal der oprettes en mappe til dokumentation af 
+Ved henvendelser der drejer sig om procesautomatiseringer, skal der oprettes en mappe til dokumentation af arbejdsgangsbeskrivelser (procestegninger). 
+Alle arbejdsgangsbeskrivelser skal dokumenteres i det repository, som hedder 'doc-arbejdsgangsbeskrivelser'. 
+Fremgangsmåden for dette er følgende: 
+1. Åben 'doc-arbejdsgangsbeskrivelser'. 
+2. Tryk på 'Add file' og herefter 'create new file'. 
+3. I feltet hvor der står: "Name your file" skriver du navnet på projektet og afslutter med skråstreg.
+4. I næste felt (der kommer frem efter du har indtastet filens navn) skriver du: "Readme.md". 
