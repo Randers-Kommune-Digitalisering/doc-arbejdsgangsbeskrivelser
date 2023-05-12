@@ -26,16 +26,7 @@ I Digitaliseringsteamet bruger vi Github som projektstyringsværktøj, samt til 
 
 ## Oprettelse af nyt projekt/proces i Digitaliseringsoverblikket
 
-Alle henvendelser vedrørende Digitaliseringsteamet ydelser skal oprettes i Digitaliseringsoverblikket. Dette gøres på følgende måde:
-
-1.  Tryk på 'add item' nederst i henvendelsesfanen.
-2.  Indsæt navn på projekt. Det anbefales, at navnet på projektet matcher navnet i SBSYS eller Topdesk.
-3.  Indsæt SBSYS sagsnummer i parentes efter projektnavn.
-4.  Tilføj navn på den person, som varetager pågaven under 'Assigness'.
-5.  Vælg status fra drop-down menuen under 'Status'.
-6.  Indtast gerne en kommentar omkring, hvad status er.
-7.  Hvis der er en opstarts- og afslutningsdato for projektet indtastes dette i felterne 'opstart' og 'afslutning'.
-8.  Indtast navnet på bestilleren/rekvirenten af henvendelsen.
+Alle henvendelser vedrørende Digitaliseringsteamet ydelser skal oprettes i Digitaliseringsoverblikket. Dette gøres ved at trykke på 'add item' nederst i henvendelsesfanen. Herefter indsætter du navn på projektet/henvendelsen, og det anbefales at navnet matcher navnet i SBSYS eller Topdesk. INdsæt også gerne SBSYS sagsnummer i projektnavn eller projektbeskrivelse. Herefter udfyldes resten af fanerne. 
 
 Efter at henvendelsen er oprettet skal selve opgaven laves om til et issue. Dette gøres ved:
 
@@ -55,3 +46,6 @@ Fremgangsmåden for dette er følgende:
 2.  Tryk på 'Add file' og herefter 'create new file'.
 3.  I feltet hvor der står: "Name your file" skriver du navnet på projektet og afslutter med skråstreg.
 4.  I næste felt (der kommer frem efter du har indtastet filens navn) skriver du: "Readme.md".
+
+## Overfør 'issues' til leveranceoverblikket
+Når du har færdiggjort 'issues' tilknyttet et projekt, skal disse sættes i drift og markeres som færdige, for at de bliver overført til leveranceoverblikket. Her er det vigtigt, at du får markeret, hvilken leverancetype der er tale om, samt skriver i kommentarfeltet hvilken afdeling det handler om. Når disse er udfyldt overføres leverancen automatisk til leveranceoverblikket. 
