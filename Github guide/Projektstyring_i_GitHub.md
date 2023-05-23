@@ -28,9 +28,12 @@
 *   En “sag” eller “opgave” repræsenteres som et “issue” i GitHub Projects, hvor du kan beskrive opgaven og spore dens fremskridt. Dette svarer til en [Issue Report ](https://prince2.wiki/management-products/issue-report/) fra PRINCE2 modellen.
 *   Et repository er et sagsregister, hvor du kan opbevare og organisere sager, opgaver og  projektfiler. Et repository svarer til dit [Issue Register](https://prince2.wiki/management-products/issue-register/) i PRINCE2.
 
-### 🔢 Hurtig trin for trin guide:
 
-### Oprettelse af en opgave eller en sag (issue) i projektstyringen
+### 📺 Video introduktion:
+[![Introdution](https://img.youtube.com/vi/DuAyYsWbt5o/maxres3.jpg)](https://youtu.be/DuAyYsWbt5o)
+
+
+### 🔢 Hurtig trin for trin guide: Oprettelse af en opgave eller en sag (issue)
 
 1.  Naviger til projektet (Det kan være en fordel at lave en genvej i browseren til projektet man arbejder på)
 2.  I bunden af en tabel, gruppe af emner eller en kolonne i board layout, klik på + Add new item
@@ -43,9 +46,9 @@
 9.  Du kan eventuelt vælge Opret flere, hvis du vil oprette flere issues, og dialogboksen vil genåbne, når du opretter dit issue.
 10.  Klik på Opret.
 
-Der er  en række  andre metoder til at oprette issues med der understøtter forskellige arbejdsgange og mere avancerede oprettelser.
 
-#### Opret en sag / opgave i et sagsregister (repository)
+---
+#### 🔢 Avanceret: Opret en sag / opgave i et sagsregister (repository)
 
 Det er også muligt at tage udgangspunkt i sagsregisteret når man vil oprette en sag eller en opgave:
 
@@ -58,7 +61,7 @@ Det er også muligt at tage udgangspunkt i sagsregisteret når man vil oprette e
 7.  Du kan også tilføje en milepæl for at spore issuet som en del af en datobaseret målsætning.
 8.  Til sidst skal du klikke på “Submit new issue” for at oprette issuet.
 
-#### Oprettelse af et issue direkte fra en kommentar
+#### 🔢 Avanceret: Oprettelse af et issue direkte fra en kommentar
 
 Hvis der opstår nye opgaver der skal løses i forbindelse med kommentarer / diskussioner i et issue, kan man oprette et nyt direkte fra kommentaren.
 
