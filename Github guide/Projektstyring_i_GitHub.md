@@ -4,13 +4,13 @@
 > 
 > **GitHub Projects leverer en række fordele som projektstyringsværktøj:**
 > 
-> ***Enkelt:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.*
+> ✨ ***Enkelt:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.*
 >  
-> ***Overskueligt:** Med GitHub Projects kan du oprette kort for opgaver og organisere dem i kolonner for at få en visuel oversigt over dit projekt og se, hvad der skal gøres, hvad der er i gang og hvad der er afsluttet.*
+> 👓 ***Overskueligt:** Med GitHub Projects kan du oprette kort for opgaver og organisere dem i kolonner for at få en visuel oversigt over dit projekt og se, hvad der skal gøres, hvad der er i gang og hvad der er afsluttet.*
 >
-> ***Samarbejdsorienteret** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.*
+> 🧑‍🤝‍🧑 ***Samarbejdsorienteret** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.*
 >  
-> ***Tværgående:** Nemt at dele information og holde styr på projektets fremskridt. Projektleder, styregruppe, arbejdesgruppe og ledelse har adgang til de samme oplysninger og kan holde sig opdateret og samarbejde om projektet i realtid.*
+> 🗣️ ***Tværgående:** Nemt at dele information og holde styr på projektets fremskridt. Projektleder, styregruppe, arbejdesgruppe og ledelse har adgang til de samme oplysninger og kan holde sig opdateret og samarbejde om projektet i realtid.*
 >
 
 <br>
