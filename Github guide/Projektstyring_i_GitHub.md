@@ -10,7 +10,7 @@
 >
 > 🧑‍🤝‍🧑 ***Samarbejdsorienteret** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.*
 >  
-> 🗣️ ***Tværgående:** Nemt at dele information og holde styr på projektets fremskridt. Projektleder, styregruppe, arbejdesgruppe og ledelse har adgang til de samme oplysninger og kan holde sig opdateret og samarbejde om projektet i realtid.*
+> 🗣️ ***Tværgående:** Det er nemt at dele information og holde styr på projektets fremskridt. Projektleder, styregruppe, arbejdsgruppe og ledelse har adgang til de samme oplysninger og kan holde sig opdateret og samarbejde om projektet i realtid.*
 >
 
 <br>
