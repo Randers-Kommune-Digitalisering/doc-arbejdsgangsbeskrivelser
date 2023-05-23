@@ -1,4 +1,4 @@
-#:clipboard: Projektstyring med GitHub Projects
+# :clipboard: Projektstyring med GitHub Projects
 
 *   **Enkelt** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.
 *   **Overskueligt:** Du kan oprette kort for individuelle opgaver og organisere dem i kolonner, der repræsenterer forskellige stadier af dit arbejde, såsom “To do”, “In progress” og “Done”. Dette giver dig en visuel oversigt over dit projekt og gør det nemt at se, hvad der skal gøres, hvad der er i gang, og hvad der er afsluttet.
