@@ -37,10 +37,11 @@
 3.  Klik på Opret nyt issue.
 4.  Øverst i dialogboksen “Opret nyt issue”, vælg det repository, hvor du vil have det nye issue oprettet.
 5.  Under rullemenuen for repository, skriv en titel til det nye issue.
-6.  Du kan eventuelt bruge felterne under titelfeltet til at indstille tildelinger, labels og milepæle
-7.  Du kan eventuelt skrive en beskrivelse af dit issue.
-8.  Du kan eventuelt vælge Opret flere, hvis du vil oprette flere issues, og dialogboksen vil genåbne, når du opretter dit issue.
-9.  Klik på Opret.
+6.  Hvis det er en overordnet sag der samler flere opgaver kan du også tilføje en opgaveliste / Tasklist ved at trykkr på tasklist ikonet. ![image](https://github.com/Randers-Kommune-Digitalisering/doc-arbejdsgangsbeskrivelser/assets/80261692/64a05bf5-0dac-4437-8fd1-1d820c325ba8)
+7.  Du kan eventuelt bruge felterne under titelfeltet til at indstille tildelinger, labels og milepæle
+8.  Du kan eventuelt skrive en beskrivelse af dit issue.
+9.  Du kan eventuelt vælge Opret flere, hvis du vil oprette flere issues, og dialogboksen vil genåbne, når du opretter dit issue.
+10.  Klik på Opret.
 
 Der er  en række  andre metoder til at oprette issues med der understøtter forskellige arbejdsgange og mere avancerede oprettelser.
 
@@ -52,7 +53,7 @@ Det er også muligt at tage udgangspunkt i sagsregisteret når man vil oprette e
 2.  Klik på “Issues” under navnet på dit repository.
 3.  Klik på “New issue”.
 4.  Giv dit issue en beskrivende titel og tilføj en beskrivelse, der forklarer formålet med issuet.
-5.  Hvis det er en overordnet sag der samler flere opgaver kan du også tilføje en opgaveliste / Tasklist ved at trykkr på tasklist ikonet.
+5.  Hvis det er en overordnet sag der samler flere opgaver kan du også tilføje en opgaveliste / Tasklist ved at trykkr på tasklist ikonet. ![image](https://github.com/Randers-Kommune-Digitalisering/doc-arbejdsgangsbeskrivelser/assets/80261692/64a05bf5-0dac-4437-8fd1-1d820c325ba8)
 6.  Tilføj labels for at kategorisere dit issue.
 7.  Du kan også tilføje en milepæl for at spore issuet som en del af en datobaseret målsætning.
 8.  Til sidst skal du klikke på “Submit new issue” for at oprette issuet.
