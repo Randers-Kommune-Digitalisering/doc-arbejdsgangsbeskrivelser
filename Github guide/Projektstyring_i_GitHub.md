@@ -15,7 +15,7 @@
 
 ### Oprettelse af en opgave eller en sag (issue) i projektstyringen
 
-1.  Naviger til projektet
+1.  Naviger til projektet (Det kan være en fordel at lave en genvej i browseren til projektet man arbejder på)
 2.  I bunden af en tabel, gruppe af emner eller en kolonne i board layout, klik på + Add new item
 3.  Klik på Opret nyt issue.
 4.  Øverst i dialogboksen “Opret nyt issue”, vælg det repository, hvor du vil have det nye issue oprettet.
