@@ -1,6 +1,8 @@
-## 📋 Projektstyring med GitHub Projects
+## Projektstyring med GitHub Projects
 
-> Du kan bruge GitHub Projects til at styre et projekt ved at  tilføje kort for hver opgave eller sag, du vil spore. Du kan organisere dine kort i kolonner, der repræsenterer forskellige stadier af dit arbejde, såsom “To do”, “In progress” og “Done”. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven.  Dette giver dig en visuel oversigt over dit projekt og gør det nemt at se, hvad der skal gøres, hvad der er i gang, og hvad der er afsluttet.
+> *   **Enkelhed:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.
+> *   **Overskuelighed:** Du kan oprette kort for individuelle opgaver og organisere dem i kolonner, der repræsenterer forskellige stadier af dit arbejde, såsom “To do”, “In progress” og “Done”. Dette giver dig en visuel oversigt over dit projekt og gør det nemt at se, hvad der skal gøres, hvad der er i gang, og hvad der er afsluttet.
+> *   **Samarbejde:** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.
 
 ### Koncepter og begreber:
 
@@ -8,7 +10,7 @@
 *   En “sag” eller “opgave” repræsenteres som et “issue” i GitHub Projects, hvor du kan beskrive opgaven og spore dens fremskridt. Dette svarer til en [Issue Report ](https://prince2.wiki/management-products/issue-report/) fra PRINCE2 modellen.
 *   Et repository er et sagsregister, hvor du kan opbevare og organisere sager, opgaver og  projektfiler. Et repository svarer til dit [Issue Register](https://prince2.wiki/management-products/issue-register/) i PRINCE2.
 
-Hurtig trin for trin guide:
+### Hurtig trin for trin guide:
 
 ### Oprettelse af en opgave eller en sag (issue) i projektstyringen
 
@@ -24,7 +26,7 @@ Hurtig trin for trin guide:
 
 Der er  en række  andre metoder til at oprette issues med der understøtter forskellige arbejdsgange og mere avancerede oprettelser.
 
-### Opret en sag / opgave i et sagsregister (repository)
+#### Opret en sag / opgave i et sagsregister (repository)
 
 Det er også muligt at tage udgangspunkt i sagsregisteret når man vil oprette en sag eller en opgave:
 
@@ -37,7 +39,7 @@ Det er også muligt at tage udgangspunkt i sagsregisteret når man vil oprette e
 7.  Du kan også tilføje en milepæl for at spore issuet som en del af en datobaseret målsætning.
 8.  Til sidst skal du klikke på “Submit new issue” for at oprette issuet.
 
-### Oprettelse af et issue direkte fra en kommentar
+#### Oprettelse af et issue direkte fra en kommentar
 
 Hvis der opstår nye opgaver der skal løses i forbindelse med kommentarer / diskussioner i et issue, kan man oprette et nyt direkte fra kommentaren.
 
