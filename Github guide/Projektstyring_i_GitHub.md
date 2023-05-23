@@ -28,7 +28,7 @@
 *   En “sag” eller “opgave” repræsenteres som et “issue” i GitHub Projects, hvor du kan beskrive opgaven og spore dens fremskridt. Dette svarer til en [Issue Report ](https://prince2.wiki/management-products/issue-report/) fra PRINCE2 modellen.
 *   Et repository er et sagsregister, hvor du kan opbevare og organisere sager, opgaver og  projektfiler. Et repository svarer til dit [Issue Register](https://prince2.wiki/management-products/issue-register/) i PRINCE2.
 
-### Hurtig trin for trin guide:
+### 🔢 Hurtig trin for trin guide:
 
 ### Oprettelse af en opgave eller en sag (issue) i projektstyringen
 
