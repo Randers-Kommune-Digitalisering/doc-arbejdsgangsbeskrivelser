@@ -3,6 +3,7 @@
 > *   **Enkelhed:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.
 > *   **Overskuelighed:** Du kan oprette kort for individuelle opgaver og organisere dem i kolonner, der repræsenterer forskellige stadier af dit arbejde, såsom “To do”, “In progress” og “Done”. Dette giver dig en visuel oversigt over dit projekt og gør det nemt at se, hvad der skal gøres, hvad der er i gang, og hvad der er afsluttet.
 > *   **Samarbejde:** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.
+> *   **Tværgående:** Når alle bruger det samme værktøj, er det nemmere at dele information og holde styr på projektets fremskridt. Det betyder også, at alle har adgang til de samme oplysninger og kan se de seneste opdateringer i realtid. En projektleder kan oprette et kort for en opgave og tildele det til en udvikler. Udvikleren kan derefter arbejde på opgaven og opdatere kortet med fremskridt og kommentarer. Projektlederen kan følge med i fremskridtet og give feedback eller stille spørgsmål direkte fra kortet. Dette gør det nemt for alle at holde sig opdateret og samarbejde om projektet.
 
 ### Koncepter og begreber:
 
