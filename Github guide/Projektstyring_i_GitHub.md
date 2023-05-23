@@ -22,7 +22,7 @@
 
 
 
-### Koncepter og begreber:
+### 📑 Koncepter og begreber:
 
 *   Et “projekt”  i GitHub Projects, er stedet hvor du kan organisere og spore dit arbejde.
 *   En “sag” eller “opgave” repræsenteres som et “issue” i GitHub Projects, hvor du kan beskrive opgaven og spore dens fremskridt. Dette svarer til en [Issue Report ](https://prince2.wiki/management-products/issue-report/) fra PRINCE2 modellen.
