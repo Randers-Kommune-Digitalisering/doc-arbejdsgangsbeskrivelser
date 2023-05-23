@@ -1,9 +1,16 @@
-# :clipboard: Projektstyring med GitHub Projects
+# 📝 Projektstyring med GitHub Projects
+> *Digitalisering i Randers Kommune bruger GitHub som versionstyrings og samarbejdsplatform til de løsninger vi arbejder på. GitHub Projects leverer en række fordele:*
+>
+>  ***Enkelt:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.*
+>  
+>  ***Overskueligt:** Med GitHub Projects kan du oprette kort for opgaver og organisere dem i kolonner for at få en visuel oversigt over dit projekt og se, hvad der skal gøres, hvad der er i gang og hvad der er afsluttet.*
+>
+>  ***Samarbejdsorienteret** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.*
+>  
+> ***Tværgående:** Nemt at dele information og holde styr på projektets fremskridt. Projektleder, styregruppe, arbejdesgruppe og ledelse har adgang til de samme oplysninger og kan holde sig opdateret og samarbejde om projektet i realtid.*
 
-*   **Enkelt:** GitHub Projects har en intuitiv og brugervenlig grænseflade, der gør det nemt for projektledere at oprette og administrere projekter.
-*   **Overskueligt:** Du kan oprette kort for individuelle opgaver og organisere dem i kolonner, der repræsenterer forskellige stadier af dit arbejde, såsom “To do”, “In progress” og “Done”. Dette giver dig en visuel oversigt over dit projekt og gør det nemt at se, hvad der skal gøres, hvad der er i gang, og hvad der er afsluttet.
-*   **Samarbejdsorienteret** Du kan invitere andre til at deltage i dit projekt og samarbejde om opgaver. Du kan også tilføje noter, kommentarer og labels til dine kort for at give mere information om opgaven og kommunikere med dit team.
-*   **Tværgående:** Når alle bruger det samme værktøj, er det nemmere at dele information og holde styr på projektets fremskridt. Det betyder også, at projektleder, styregruppe, arbejdesgruppe og ledelse har adgang til de samme oplysninger og kan se de seneste opdateringer i realtid. Dette gør det nemt for alle at holde sig opdateret og samarbejde om projektet.
+<br>
+
 
 ### Koncepter og begreber:
 
