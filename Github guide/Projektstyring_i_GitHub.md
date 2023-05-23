@@ -15,7 +15,7 @@
 
 <br>
 
-![image](https://github.com/Randers-Kommune-Digitalisering/doc-arbejdsgangsbeskrivelser/assets/80261692/4b3f3da0-478f-4d69-b9a3-ad740468d706)
+![gh_projects](https://github.com/Randers-Kommune-Digitalisering/doc-arbejdsgangsbeskrivelser/assets/80261692/1ff22139-955b-4a77-8376-fd9150eb716d)
 
 <br>
 
