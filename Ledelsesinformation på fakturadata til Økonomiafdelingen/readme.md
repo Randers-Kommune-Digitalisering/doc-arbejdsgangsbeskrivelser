@@ -1,1 +1,1 @@
-
+Procestegning over arbejdsgang vedrørende fakturabetaling i Økonomiafdelingen. Benærk, at processen er meget forsimplet. Det er aftalt med rekvirent (Morten Elgaard) at den kan tegnes mere detajleret, hvis der skulle opstå behov for det.  
