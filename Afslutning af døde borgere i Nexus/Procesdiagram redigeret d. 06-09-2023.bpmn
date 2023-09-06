@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_0nt7ziy" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <bpmn:collaboration id="Collaboration_0md2vla">
+    <bpmn:participant id="Participant_02cquxc" name="Nexus" processRef="Process_0qfjw3l" />
+    <bpmn:participant id="Participant_0601kr0" name="CPR-registret" processRef="Process_08f0ss8" />
+    <bpmn:messageFlow id="Flow_044ai6e" sourceRef="Activity_1448sdn" targetRef="Activity_0042i47" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0qfjw3l" isExecutable="true">
+    <bpmn:task id="Activity_0hsbo2e" name="Går ind i borgers kalender og fjerner alle besøg">
+      <bpmn:incoming>Flow_1ub2nii</bpmn:incoming>
+      <bpmn:outgoing>Flow_1dw99cz</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0gy8k0b" name="Går ind og fjerner ikke-visiterede ydelser">
+      <bpmn:incoming>Flow_1dw99cz</bpmn:incoming>
+      <bpmn:outgoing>Flow_1637cjy</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1ukklld" name="Fjerne tilknytningen til fælles medicin kort">
+      <bpmn:incoming>Flow_1637cjy</bpmn:incoming>
+      <bpmn:outgoing>Flow_02az1ks</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0fggxkk" name="Fjerne lokale oprettede ordinationer.">
+      <bpmn:incoming>Flow_02az1ks</bpmn:incoming>
+      <bpmn:outgoing>Flow_1n2wkrv</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_14m74cm" name="Inaktiver tilstande">
+      <bpmn:incoming>Flow_1n2wkrv</bpmn:incoming>
+      <bpmn:outgoing>Flow_1q7sn22</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0ywkxu3" name="Inaktiver handlingsanvisninger og øvrige skeamer">
+      <bpmn:incoming>Flow_1q7sn22</bpmn:incoming>
+      <bpmn:outgoing>Flow_0dty8ln</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0vlkccv" name="Afslut indsatser">
+      <bpmn:incoming>Flow_0dty8ln</bpmn:incoming>
+      <bpmn:outgoing>Flow_1okngmy</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_02xv39d" name="Fjern borger fra fordelingsliste">
+      <bpmn:incoming>Flow_1okngmy</bpmn:incoming>
+      <bpmn:outgoing>Flow_02r7v24</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1xnedkh" name="Indsæt slutdato på organisationsenhederne">
+      <bpmn:incoming>Flow_0xo0xfk</bpmn:incoming>
+      <bpmn:outgoing>Flow_1h883ib</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0jxki1i" name="Fjerne brugere">
+      <bpmn:incoming>Flow_1h883ib</bpmn:incoming>
+      <bpmn:outgoing>Flow_0pp7pah</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_0a5wt64">
+      <bpmn:incoming>Flow_0pp7pah</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:task id="Activity_1sqkmmx" name="Luk underforløb og enkelte grundforløb">
+      <bpmn:incoming>Flow_02r7v24</bpmn:incoming>
+      <bpmn:outgoing>Flow_0xo0xfk</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0042i47" name="Borger får automatisk status som &#34;død&#34;">
+      <bpmn:outgoing>Flow_1ub2nii</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_1ub2nii" sourceRef="Activity_0042i47" targetRef="Activity_0hsbo2e" />
+    <bpmn:sequenceFlow id="Flow_1dw99cz" sourceRef="Activity_0hsbo2e" targetRef="Activity_0gy8k0b" />
+    <bpmn:sequenceFlow id="Flow_1637cjy" sourceRef="Activity_0gy8k0b" targetRef="Activity_1ukklld" />
+    <bpmn:sequenceFlow id="Flow_02az1ks" sourceRef="Activity_1ukklld" targetRef="Activity_0fggxkk" />
+    <bpmn:sequenceFlow id="Flow_1n2wkrv" sourceRef="Activity_0fggxkk" targetRef="Activity_14m74cm" />
+    <bpmn:sequenceFlow id="Flow_1q7sn22" sourceRef="Activity_14m74cm" targetRef="Activity_0ywkxu3" />
+    <bpmn:sequenceFlow id="Flow_0dty8ln" sourceRef="Activity_0ywkxu3" targetRef="Activity_0vlkccv" />
+    <bpmn:sequenceFlow id="Flow_1okngmy" sourceRef="Activity_0vlkccv" targetRef="Activity_02xv39d" />
+    <bpmn:sequenceFlow id="Flow_02r7v24" sourceRef="Activity_02xv39d" targetRef="Activity_1sqkmmx" />
+    <bpmn:sequenceFlow id="Flow_0xo0xfk" sourceRef="Activity_1sqkmmx" targetRef="Activity_1xnedkh" />
+    <bpmn:sequenceFlow id="Flow_1h883ib" sourceRef="Activity_1xnedkh" targetRef="Activity_0jxki1i" />
+    <bpmn:sequenceFlow id="Flow_0pp7pah" sourceRef="Activity_0jxki1i" targetRef="Event_0a5wt64" />
+    <bpmn:textAnnotation id="TextAnnotation_1tu7c7s">
+      <bpmn:text>OBS: her bruges der Signatur.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_1btqx25">
+      <bpmn:text>Lokalt i Nexus</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_07g7oqe">
+      <bpmn:text>Der kan være flere tilstande, i så fald skal alle inaktiveres.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_03e3i83">
+      <bpmn:text>Her skal der listes, hvilke anvisninger det drejer sig om.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_11n1j0x">
+      <bpmn:text>Der er tre indsatser som ikke skal afsluttes. Kan være manuel arbejdsgang.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_1l30wnh">
+      <bpmn:text>Hvis alle underforløb er lukket, så må grundforløbet (sundhed, kultur og omsorg) lukkes.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:textAnnotation id="TextAnnotation_0qagiga">
+      <bpmn:text>Døde borgere komme frem på borgerlister hos sagsbehandlere</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1xk7r9t" sourceRef="Activity_1ukklld" targetRef="TextAnnotation_1tu7c7s" />
+    <bpmn:association id="Association_0xbd4sq" sourceRef="Activity_0fggxkk" targetRef="TextAnnotation_1btqx25" />
+    <bpmn:association id="Association_0viv4r2" sourceRef="Activity_14m74cm" targetRef="TextAnnotation_07g7oqe" />
+    <bpmn:association id="Association_0gjdwtf" sourceRef="Activity_0ywkxu3" targetRef="TextAnnotation_03e3i83" />
+    <bpmn:association id="Association_1ql8ln6" sourceRef="Activity_0vlkccv" targetRef="TextAnnotation_11n1j0x" />
+    <bpmn:association id="Association_002t8zo" sourceRef="Activity_1sqkmmx" targetRef="TextAnnotation_1l30wnh" />
+    <bpmn:association id="Association_0w2u2z9" sourceRef="Activity_0042i47" targetRef="TextAnnotation_0qagiga" />
+  </bpmn:process>
+  <bpmn:process id="Process_08f0ss8" isExecutable="false">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_00oqfsk</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:parallelGateway id="Gateway_0tki7io">
+      <bpmn:incoming>Flow_00oqfsk</bpmn:incoming>
+      <bpmn:outgoing>Flow_1hebg6v</bpmn:outgoing>
+      <bpmn:outgoing>Flow_16wc6g3</bpmn:outgoing>
+    </bpmn:parallelGateway>
+    <bpmn:task id="Activity_12ecqwy" name="Borgerstatus ændres til død">
+      <bpmn:incoming>Flow_1hebg6v</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Activity_1448sdn" name="Borgerstatus ændres til død manuelt i Nexus">
+      <bpmn:incoming>Flow_16wc6g3</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_00oqfsk" sourceRef="StartEvent_1" targetRef="Gateway_0tki7io" />
+    <bpmn:sequenceFlow id="Flow_1hebg6v" sourceRef="Gateway_0tki7io" targetRef="Activity_12ecqwy" />
+    <bpmn:sequenceFlow id="Flow_16wc6g3" sourceRef="Gateway_0tki7io" targetRef="Activity_1448sdn" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0md2vla">
+      <bpmndi:BPMNShape id="Participant_0601kr0_di" bpmnElement="Participant_0601kr0" isHorizontal="true">
+        <dc:Bounds x="160" y="80" width="2570" height="335" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="222" y="212" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1s4o4ip_di" bpmnElement="Gateway_0tki7io">
+        <dc:Bounds x="315" y="205" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_12ecqwy_di" bpmnElement="Activity_12ecqwy">
+        <dc:Bounds x="430" y="190" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1448sdn_di" bpmnElement="Activity_1448sdn">
+        <dc:Bounds x="430" y="300" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_00oqfsk_di" bpmnElement="Flow_00oqfsk">
+        <di:waypoint x="258" y="230" />
+        <di:waypoint x="315" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1hebg6v_di" bpmnElement="Flow_1hebg6v">
+        <di:waypoint x="365" y="230" />
+        <di:waypoint x="430" y="230" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_16wc6g3_di" bpmnElement="Flow_16wc6g3">
+        <di:waypoint x="340" y="255" />
+        <di:waypoint x="340" y="340" />
+        <di:waypoint x="430" y="340" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_02cquxc_di" bpmnElement="Participant_02cquxc" isHorizontal="true">
+        <dc:Bounds x="160" y="420" width="2570" height="321" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1tu7c7s_di" bpmnElement="TextAnnotation_1tu7c7s">
+        <dc:Bounds x="1170" y="431" width="100" height="50" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1btqx25_di" bpmnElement="TextAnnotation_1btqx25">
+        <dc:Bounds x="1320" y="431" width="100" height="30" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_07g7oqe_di" bpmnElement="TextAnnotation_07g7oqe">
+        <dc:Bounds x="1470" y="431" width="130" height="60" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_03e3i83_di" bpmnElement="TextAnnotation_03e3i83">
+        <dc:Bounds x="1620" y="431" width="150" height="60" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_11n1j0x_di" bpmnElement="TextAnnotation_11n1j0x">
+        <dc:Bounds x="1750" y="631" width="130" height="70" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1l30wnh_di" bpmnElement="TextAnnotation_1l30wnh">
+        <dc:Bounds x="2010" y="426" width="180" height="60" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0qagiga_di" bpmnElement="TextAnnotation_0qagiga">
+        <dc:Bounds x="600" y="430" width="130" height="51" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0hsbo2e_di" bpmnElement="Activity_0hsbo2e">
+        <dc:Bounds x="770" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0gy8k0b_di" bpmnElement="Activity_0gy8k0b">
+        <dc:Bounds x="920" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1ukklld_di" bpmnElement="Activity_1ukklld">
+        <dc:Bounds x="1070" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0fggxkk_di" bpmnElement="Activity_0fggxkk">
+        <dc:Bounds x="1220" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_14m74cm_di" bpmnElement="Activity_14m74cm">
+        <dc:Bounds x="1370" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ywkxu3_di" bpmnElement="Activity_0ywkxu3">
+        <dc:Bounds x="1520" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0vlkccv_di" bpmnElement="Activity_0vlkccv">
+        <dc:Bounds x="1670" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_02xv39d_di" bpmnElement="Activity_02xv39d">
+        <dc:Bounds x="1820" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1xnedkh_di" bpmnElement="Activity_1xnedkh">
+        <dc:Bounds x="2190" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jxki1i_di" bpmnElement="Activity_0jxki1i">
+        <dc:Bounds x="2340" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0a5wt64_di" bpmnElement="Event_0a5wt64">
+        <dc:Bounds x="2492" y="533" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1sqkmmx_di" bpmnElement="Activity_1sqkmmx">
+        <dc:Bounds x="2010" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0042i47_di" bpmnElement="Activity_0042i47">
+        <dc:Bounds x="500" y="511" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1xk7r9t_di" bpmnElement="Association_1xk7r9t">
+        <di:waypoint x="1158" y="511" />
+        <di:waypoint x="1187" y="481" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0xbd4sq_di" bpmnElement="Association_0xbd4sq">
+        <di:waypoint x="1308" y="511" />
+        <di:waypoint x="1356" y="461" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0viv4r2_di" bpmnElement="Association_0viv4r2">
+        <di:waypoint x="1458" y="511" />
+        <di:waypoint x="1477" y="491" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0gjdwtf_di" bpmnElement="Association_0gjdwtf">
+        <di:waypoint x="1608" y="511" />
+        <di:waypoint x="1627" y="491" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1ql8ln6_di" bpmnElement="Association_1ql8ln6">
+        <di:waypoint x="1754" y="591" />
+        <di:waypoint x="1787" y="631" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_002t8zo_di" bpmnElement="Association_002t8zo">
+        <di:waypoint x="2060" y="511" />
+        <di:waypoint x="2060" y="486" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_0w2u2z9_di" bpmnElement="Association_0w2u2z9">
+        <di:waypoint x="588" y="511" />
+        <di:waypoint x="616" y="481" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1ub2nii_di" bpmnElement="Flow_1ub2nii">
+        <di:waypoint x="600" y="551" />
+        <di:waypoint x="770" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1dw99cz_di" bpmnElement="Flow_1dw99cz">
+        <di:waypoint x="870" y="551" />
+        <di:waypoint x="920" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1637cjy_di" bpmnElement="Flow_1637cjy">
+        <di:waypoint x="1020" y="551" />
+        <di:waypoint x="1070" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_02az1ks_di" bpmnElement="Flow_02az1ks">
+        <di:waypoint x="1170" y="551" />
+        <di:waypoint x="1220" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1n2wkrv_di" bpmnElement="Flow_1n2wkrv">
+        <di:waypoint x="1320" y="551" />
+        <di:waypoint x="1370" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1q7sn22_di" bpmnElement="Flow_1q7sn22">
+        <di:waypoint x="1470" y="551" />
+        <di:waypoint x="1520" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0dty8ln_di" bpmnElement="Flow_0dty8ln">
+        <di:waypoint x="1620" y="551" />
+        <di:waypoint x="1670" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1okngmy_di" bpmnElement="Flow_1okngmy">
+        <di:waypoint x="1770" y="551" />
+        <di:waypoint x="1820" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_02r7v24_di" bpmnElement="Flow_02r7v24">
+        <di:waypoint x="1920" y="551" />
+        <di:waypoint x="2010" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xo0xfk_di" bpmnElement="Flow_0xo0xfk">
+        <di:waypoint x="2110" y="551" />
+        <di:waypoint x="2190" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1h883ib_di" bpmnElement="Flow_1h883ib">
+        <di:waypoint x="2290" y="551" />
+        <di:waypoint x="2340" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0pp7pah_di" bpmnElement="Flow_0pp7pah">
+        <di:waypoint x="2440" y="551" />
+        <di:waypoint x="2492" y="551" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_044ai6e_di" bpmnElement="Flow_044ai6e">
+        <di:waypoint x="480" y="380" />
+        <di:waypoint x="480" y="441" />
+        <di:waypoint x="560" y="441" />
+        <di:waypoint x="560" y="511" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
