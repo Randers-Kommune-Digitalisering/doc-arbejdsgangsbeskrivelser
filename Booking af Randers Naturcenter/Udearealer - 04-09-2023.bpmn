@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1lc742t" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.5.1" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0">
+  <bpmn:collaboration id="Collaboration_0tdg6fo">
+    <bpmn:participant id="Participant_0nkbb3d" name="Brugere" processRef="Process_1jpzfqr" />
+    <bpmn:participant id="Participant_09aex9o" name="Randers Naturcenter" processRef="Process_1d56n22" />
+    <bpmn:messageFlow id="Flow_070q41d" sourceRef="Activity_0ozobj9" targetRef="Activity_1hyk7o9" />
+    <bpmn:messageFlow id="Flow_18uli91" sourceRef="Activity_1pxbiye" targetRef="Activity_0zi9qfy" />
+    <bpmn:messageFlow id="Flow_0hls8yx" sourceRef="Activity_0zi9qfy" targetRef="Activity_16s5ukz" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_1jpzfqr" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_1h5ou6u</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_0ozobj9" name="Kontaker Randers Naturcenter via telefin eller mail">
+      <bpmn:incoming>Flow_1h5ou6u</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:task id="Activity_0zi9qfy" name="Hente nøgle og udfylde fysisk formular i ugen op til." />
+    <bpmn:sequenceFlow id="Flow_1h5ou6u" sourceRef="StartEvent_1" targetRef="Activity_0ozobj9" />
+  </bpmn:process>
+  <bpmn:process id="Process_1d56n22" isExecutable="false">
+    <bpmn:task id="Activity_1hyk7o9" name="Ser, om tiden passer.">
+      <bpmn:outgoing>Flow_0k5amre</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_1pxbiye" name="Finder tid">
+      <bpmn:incoming>Flow_0k5amre</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_0k5amre" sourceRef="Activity_1hyk7o9" targetRef="Activity_1pxbiye" />
+    <bpmn:task id="Activity_16s5ukz" name="Scanner sedler der er udfyldt og sender til økonomi" />
+    <bpmn:textAnnotation id="TextAnnotation_0prtrfo">
+      <bpmn:text>Frem og tilbage indtil man finder en dator - tager meget tid</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1fsameo" sourceRef="Activity_1pxbiye" targetRef="TextAnnotation_0prtrfo" />
+    <bpmn:textAnnotation id="TextAnnotation_1o4pv0j">
+      <bpmn:text>1 gang om måneden. Sender via mail.</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1gklba2" sourceRef="Activity_16s5ukz" targetRef="TextAnnotation_1o4pv0j" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0tdg6fo">
+      <bpmndi:BPMNShape id="Participant_09aex9o_di" bpmnElement="Participant_09aex9o" isHorizontal="true">
+        <dc:Bounds x="160" y="290" width="1260" height="320" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1hyk7o9_di" bpmnElement="Activity_1hyk7o9">
+        <dc:Bounds x="490" y="450" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1pxbiye_di" bpmnElement="Activity_1pxbiye">
+        <dc:Bounds x="640" y="450" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_16s5ukz_di" bpmnElement="Activity_16s5ukz">
+        <dc:Bounds x="1130" y="430" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0prtrfo_di" bpmnElement="TextAnnotation_0prtrfo">
+        <dc:Bounds x="740" y="370" width="100" height="70" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1o4pv0j_di" bpmnElement="TextAnnotation_1o4pv0j">
+        <dc:Bounds x="1230" y="350" width="100" height="50" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0k5amre_di" bpmnElement="Flow_0k5amre">
+        <di:waypoint x="590" y="490" />
+        <di:waypoint x="640" y="490" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1fsameo_di" bpmnElement="Association_1fsameo">
+        <di:waypoint x="728" y="450" />
+        <di:waypoint x="740" y="438" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Association_1gklba2_di" bpmnElement="Association_1gklba2">
+        <di:waypoint x="1218" y="430" />
+        <di:waypoint x="1247" y="400" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_0nkbb3d_di" bpmnElement="Participant_0nkbb3d" isHorizontal="true">
+        <dc:Bounds x="160" y="40" width="1260" height="250" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="229" y="132" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ozobj9_di" bpmnElement="Activity_0ozobj9">
+        <dc:Bounds x="320" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0zi9qfy_di" bpmnElement="Activity_0zi9qfy">
+        <dc:Bounds x="800" y="110" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_1h5ou6u_di" bpmnElement="Flow_1h5ou6u">
+        <di:waypoint x="265" y="150" />
+        <di:waypoint x="320" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_070q41d_di" bpmnElement="Flow_070q41d">
+        <di:waypoint x="420" y="150" />
+        <di:waypoint x="460" y="150" />
+        <di:waypoint x="460" y="490" />
+        <di:waypoint x="490" y="490" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_18uli91_di" bpmnElement="Flow_18uli91">
+        <di:waypoint x="690" y="450" />
+        <di:waypoint x="690" y="150" />
+        <di:waypoint x="800" y="150" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0hls8yx_di" bpmnElement="Flow_0hls8yx">
+        <di:waypoint x="900" y="150" />
+        <di:waypoint x="1020" y="150" />
+        <di:waypoint x="1020" y="470" />
+        <di:waypoint x="1130" y="470" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
