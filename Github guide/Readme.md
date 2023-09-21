@@ -20,6 +20,11 @@ Du kan oprette en taskliste ved at trykke på ikonet, som illustrere en opgaveli
 
 Digitaliseringsoverblikket bruges især til dokumentation omkring projektets fremdrift og status. Derfor er det vigtigt, at du sørger for at holde det enkelte projekt/proces opdateret. Dette gør du ved at oprette en kommentar i feltet nederst, hvor der også står 'leave a comment'. 
 
+Derudover er det også vigtigt, at du ændrer projektets/processens fase, når der sker ændringer - eksempelvis når en bevæger sig fra henvendelse til behovsafklaring. 
+
+## Afslutning af projekt/proces og i driftssættelse
+Når et projekt/proces er enten afsluttet eller der er sat en udviklet løsning i drift, skal dette noteres i Digitaliseringsoverblikket. Dettes gøres ved at ændre projektets/processens fase til enten 'I drift' eller 'Afsluttet'. Herefter overføres det direkte til vores driftsoverblik. 
+
 
 ## Oprettelse af mappe til arbejdsgangsbeskrivelser
 
