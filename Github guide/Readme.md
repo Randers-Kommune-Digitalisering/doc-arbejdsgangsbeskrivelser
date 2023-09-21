@@ -32,9 +32,6 @@ Fremgangsmåden for dette er følgende:
 3.  I feltet hvor der står: "Name your file" skriver du navnet på projektet og afslutter med skråstreg.
 4.  I næste felt (der kommer frem efter du har indtastet filens navn) skriver du: "Readme.md".
 
-## Overfør 'issues' til leveranceoverblikket
-Når du har færdiggjort 'issues' tilknyttet et projekt, skal disse sættes i drift og markeres som færdige, for at de bliver overført til leveranceoverblikket. Her er det vigtigt, at du får markeret, hvilken leverancetype der er tale om, samt skriver i kommentarfeltet hvilken afdeling det handler om. Når disse er udfyldt overføres leverancen automatisk til leveranceoverblikket. 
-
 ## Begreber
 
 ### Inden for projektstyring eksisterer der en række begreber. Herunder er en sammenstilling af begreber fra projektstyrings verdenen med det man møder i GitHub Projects
