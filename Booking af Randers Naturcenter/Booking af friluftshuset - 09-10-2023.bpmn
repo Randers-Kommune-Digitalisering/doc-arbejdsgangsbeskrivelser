@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1lfea94" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.15.2" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.2.0">
+  <bpmn:collaboration id="Collaboration_1nyasiu">
+    <bpmn:participant id="Participant_0ar6o6g" name="Bruger" processRef="Process_062nw50" />
+    <bpmn:participant id="Participant_1bx19vj" name="Naturcenter Rancders" processRef="Process_16ghse3" />
+    <bpmn:messageFlow id="Flow_1sowqxz" sourceRef="Activity_0ejvw87" targetRef="Activity_0xfa95f" />
+    <bpmn:messageFlow id="Flow_167u3s9" sourceRef="Activity_0q2wou4" targetRef="Activity_1iebmmc" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_062nw50" isExecutable="true">
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_14mz83a</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:task id="Activity_0xfa95f" name="Henter nøgle">
+      <bpmn:outgoing>Flow_0fnqlhr</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:endEvent id="Event_05hr4h4">
+      <bpmn:incoming>Flow_0fnqlhr</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_0fnqlhr" sourceRef="Activity_0xfa95f" targetRef="Event_05hr4h4" />
+    <bpmn:task id="Activity_0q2wou4" name="Kontakter Naturcenter Randers via mail eller telefon">
+      <bpmn:incoming>Flow_14mz83a</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:sequenceFlow id="Flow_14mz83a" sourceRef="StartEvent_1" targetRef="Activity_0q2wou4" />
+  </bpmn:process>
+  <bpmn:process id="Process_16ghse3" isExecutable="false">
+    <bpmn:sequenceFlow id="Flow_105vp8g" sourceRef="Activity_1iebmmc" targetRef="Activity_0ejvw87" />
+    <bpmn:task id="Activity_1iebmmc" name="Ser om tiden passer">
+      <bpmn:outgoing>Flow_105vp8g</bpmn:outgoing>
+    </bpmn:task>
+    <bpmn:task id="Activity_0ejvw87" name="Finder tid">
+      <bpmn:incoming>Flow_105vp8g</bpmn:incoming>
+    </bpmn:task>
+    <bpmn:textAnnotation id="TextAnnotation_1x5w9iu">
+      <bpmn:text>Frem og tilbage indtil man finder en dato. Tidskrævende</bpmn:text>
+    </bpmn:textAnnotation>
+    <bpmn:association id="Association_1vozt80" sourceRef="Activity_1iebmmc" targetRef="TextAnnotation_1x5w9iu" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1nyasiu">
+      <bpmndi:BPMNShape id="Participant_0ar6o6g_di" bpmnElement="Participant_0ar6o6g" isHorizontal="true">
+        <dc:Bounds x="129" y="79" width="901" height="250" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="179" y="112" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0xfa95f_di" bpmnElement="Activity_0xfa95f">
+        <dc:Bounds x="690" y="160" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_05hr4h4_di" bpmnElement="Event_05hr4h4">
+        <dc:Bounds x="832" y="182" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0q2wou4_di" bpmnElement="Activity_0q2wou4">
+        <dc:Bounds x="240" y="90" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_0fnqlhr_di" bpmnElement="Flow_0fnqlhr">
+        <di:waypoint x="790" y="200" />
+        <di:waypoint x="832" y="200" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_14mz83a_di" bpmnElement="Flow_14mz83a">
+        <di:waypoint x="215" y="130" />
+        <di:waypoint x="240" y="130" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_1bx19vj_di" bpmnElement="Participant_1bx19vj" isHorizontal="true">
+        <dc:Bounds x="129" y="290" width="901" height="290" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_1x5w9iu_di" bpmnElement="TextAnnotation_1x5w9iu">
+        <dc:Bounds x="470" y="340" width="100" height="70" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1iebmmc_di" bpmnElement="Activity_1iebmmc">
+        <dc:Bounds x="370" y="430" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ejvw87_di" bpmnElement="Activity_0ejvw87">
+        <dc:Bounds x="580" y="430" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Association_1vozt80_di" bpmnElement="Association_1vozt80">
+        <di:waypoint x="455" y="430" />
+        <di:waypoint x="472" y="410" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_105vp8g_di" bpmnElement="Flow_105vp8g">
+        <di:waypoint x="470" y="470" />
+        <di:waypoint x="580" y="470" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1sowqxz_di" bpmnElement="Flow_1sowqxz">
+        <di:waypoint x="630" y="430" />
+        <di:waypoint x="630" y="190" />
+        <di:waypoint x="690" y="190" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_167u3s9_di" bpmnElement="Flow_167u3s9">
+        <di:waypoint x="290" y="170" />
+        <di:waypoint x="290" y="280" />
+        <di:waypoint x="420" y="280" />
+        <di:waypoint x="420" y="430" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
